@@ -36,9 +36,6 @@ Always start Jupyter from the activated `reactml` environment. If in doubt, chec
 - Calculated descriptors, cached DFT results and BO suggestions are written to `results/`.
 - Your own experimental results go into `data/my_experiments.csv` (see notebook 03, Part 5). Record one row per reaction, including failures, and never delete rows.
 
-## Running times
-
-On a laptop, each notebook runs end-to-end in a few minutes. The DFT calculations in notebook 01 are cached to `results/`, and the Chemprop training in notebook 02 takes about 5–10 minutes on a CPU.
 
 ## Further reading
 
