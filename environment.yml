@@ -1,0 +1,29 @@
+# Environment for notebooks 01-03. Install everything from conda-forge:
+# mixing pip-installed PyTorch with conda-forge PySCF/xTB crashes on macOS (two OpenMP runtimes).
+name: reactml
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  # cheminformatics + quantum chemistry (01)
+  - rdkit
+  - pyscf
+  - tblite-python      # GFN2-xTB
+  - ase
+  - geometric          # geometry optimiser for PySCF (optional)
+  - morfeus-ml         # steric descriptors (exercises)
+  - py3dmol
+  # machine learning (02, 03)
+  - scikit-learn
+  - pytorch
+  - chemprop=2
+  - baybe
+  # general
+  - scipy
+  - pandas
+  - openpyxl
+  - matplotlib
+  - jupyterlab         # `jupyter lab`
+  - notebook           # `jupyter notebook` (classic interface)
+  - ipykernel
