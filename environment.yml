@@ -1,5 +1,14 @@
 # Environment for notebooks 01-03. Install everything from conda-forge:
 # mixing pip-installed PyTorch with conda-forge PySCF/xTB crashes on macOS (two OpenMP runtimes).
+#
+# Install (macOS: Terminal; Windows: "Anaconda Prompt" from the Start menu, not Navigator's Import):
+#   conda env create -f environment.yml
+#   conda activate reactml
+#
+# Windows: if this stops with "Terms of Service have not been accepted ... pkgs/msys2",
+# run the line below once and repeat the create command (Anaconda on Windows adds an
+# msys2 channel to its defaults, and conda checks its licence even though nothing here needs it).
+#   conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/msys2
 name: reactml
 channels:
   - conda-forge
